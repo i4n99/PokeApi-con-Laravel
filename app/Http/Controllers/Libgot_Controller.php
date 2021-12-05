@@ -25,16 +25,16 @@ class Libgot_Controller extends Controller
         // dd($pokemonList);
     }
 
-    private function pokemonDetailComplete(){
+    /* private function pokemonDetailComplete(){
         foreach($pokemonNameList->results as $key=>$p){
             // dd($pokemon);
             $pokemonInfo = PokeApi::PokemonList('pokemon/' . $p->name);
             // dd($pokemonInfo);
             // $pokemonList[];
-            @$pokemonList[$key]->name = $pokemonInfo->name;
+            $pokemonList[$key]->name = $pokemonInfo->name;
             $pokemonList[$key]->type = $pokemonInfo->types[0]->type->name;
             // $pokemonList[$key]->name = $pokemonInfo->weight;
         }
         // dd($pokemonList);
-    }
+    } */
 }
